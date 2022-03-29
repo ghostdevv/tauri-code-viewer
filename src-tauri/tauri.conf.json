@@ -1,19 +1,19 @@
 {
   "package": {
-    "productName": "ghosts-code-viewer",
-    "version": "1.0.0"
+    "productName": "tauri-code-viewer",
+    "version": "0.1.0"
   },
   "build": {
-    "distDir": "../public",
-    "devPath": "http://localhost:8080",
-    "beforeDevCommand": "pnpm dev",
-    "beforeBuildCommand": "pnpm build"
+    "distDir": "../build",
+    "devPath": "http://localhost:3000",
+    "beforeDevCommand": "svelte-kit dev",
+    "beforeBuildCommand": "svelte-kit build"
   },
   "tauri": {
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "xyz.ghostdev.codeviewer",
+      "identifier": "com.tauri.dev",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -23,17 +23,16 @@
       ],
       "resources": [],
       "externalBin": [],
-      "copyright": "GHOST",
+      "copyright": "",
       "category": "DeveloperTool",
-      "shortDescription": "Code Viewer",
-      "longDescription": "A Code Viewer",
+      "shortDescription": "",
+      "longDescription": "",
       "deb": {
         "depends": [],
         "useBootstrapper": false
       },
       "macOS": {
         "frameworks": [],
-        "minimumSystemVersion": "",
         "useBootstrapper": false,
         "exceptionDomain": "",
         "signingIdentity": null,
@@ -54,12 +53,15 @@
     },
     "windows": [
       {
-        "title": "Code Viewer",
-        "width": 1200,
-        "height": 800,
+        "title": "tauri-code-viewer",
+        "width": 800,
+        "height": 600,
         "resizable": true,
         "fullscreen": false
       }
-    ]
+    ],
+    "security": {
+      "csp": null
+    }
   }
 }

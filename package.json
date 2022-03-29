@@ -1,35 +1,23 @@
 {
-  "name": "codeviewer",
-  "version": "1.0.0",
-  "private": true,
+  "name": "tauri-code-viewer",
+  "version": "0.0.1",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public --no-clear",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "prepare": "svelte-kit sync",
     "tauri": "tauri"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.1.0",
-    "@rollup/plugin-node-resolve": "^11.2.1",
-    "@rollup/plugin-typescript": "^8.3.1",
-    "@tauri-apps/cli": "^1.0.0-rc.5",
-    "@tsconfig/svelte": "^2.0.1",
-    "rollup": "^2.69.0",
-    "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-svelte": "^7.1.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "svelte": "^3.46.4",
-    "svelte-check": "^2.4.5",
-    "svelte-preprocess": "^4.10.4",
-    "tslib": "^2.3.1",
-    "typescript": "^4.6.2"
+    "@sveltejs/adapter-static": "^1.0.0-next.29",
+    "@sveltejs/kit": "next",
+    "@tauri-apps/api": "^1.0.0-rc.3",
+    "@tauri-apps/cli": "^1.0.0-rc.8",
+    "svelte": "^3.44.0"
   },
+  "type": "module",
   "dependencies": {
-    "@tauri-apps/api": "^1.0.0-rc.1",
-    "ghostsui": "^1.2.0",
-    "sirv-cli": "^2.0.2",
-    "svelte-prism": "^1.1.3"
+    "svelte-prism": "^1.1.4"
   }
 }
