@@ -14,7 +14,7 @@
     "@sveltejs/kit": "next",
     "@tauri-apps/api": "^1.0.0-rc.3",
     "@tauri-apps/cli": "^1.0.0-rc.8",
-    "svelte": "^3.44.0"
+    "svelte": "^3.49.0"
   },
   "type": "module",
   "dependencies": {
