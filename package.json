@@ -13,7 +13,7 @@
     "@sveltejs/adapter-static": "^1.0.0-next.29",
     "@sveltejs/kit": "next",
     "@tauri-apps/api": "^1.0.0-rc.3",
-    "@tauri-apps/cli": "^1.0.0-rc.8",
+    "@tauri-apps/cli": "^2.0.0-alpha.16",
     "svelte": "^3.44.0"
   },
   "type": "module",
